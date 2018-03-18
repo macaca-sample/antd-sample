@@ -1,5 +1,7 @@
 # antd-sample
 
+Macaca test sample for Ant.design
+
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![npm download][download-image]][download-url]
