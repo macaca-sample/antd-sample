@@ -1,0 +1,17 @@
+dist
+.DS_Store
+node_modules
+package-lock.json
+npm-debug.log
+.idea/*
+Thumbs.db
+coverage/
+reports/
+screenshots/
+.project
+build/
+logs/
+TODO
+*.sw*
+*.un~
+*.tgz
