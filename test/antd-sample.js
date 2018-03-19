@@ -32,24 +32,30 @@ describe('test/antd-sample.test.js', () => {
 
     after(() => {
       return driver
-        .openReporter(false)
-        .quit();
+        .openReporter(false);
+      // .quit();
     });
 
     it('page render should be ok', () => {
       return driver
         .getUrl(BASE_URL)
         .sleep(1000)
-        .elementByCss('#app > div > div.ant-layout-content > div')
+        .elementByClassName('select-example')
         .click()
         .sleep(1000)
-        .execute('document.querySelector(\'body > div:nth-child(2) > div > div > div > ul > li:nth-child(4)\').click()')
+        .execute('document.querySelector(\'.select-name li:nth-child(4)\').click()')
         .sleep(1000)
-        .elementByCss('#app > div > div.ant-layout-content > div > div > div > div')
+        .elementByCss('.select-example > div > div > div')
         .text()
         .then(d => {
           console.log(`-------- ${d} ---------`);
           assert(d, 'fourth');
+        })
+        .elementByClassName('btn-submit')
+        .click()
+        .execute('return document.getElementsByClassName("ant-form-explain")')
+        .then(arr => {
+          console.log(arr);
         });
     });
   });
