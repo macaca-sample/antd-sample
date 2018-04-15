@@ -2,9 +2,28 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const DataHub = require('macaca-datahub');
+const datahubMiddleware = require('datahub-proxy-middleware');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const pkg = require('./package');
+
+const datahubConfig = {
+  port: 5678,
+  hostname: '127.0.0.1',
+  store: path.join(__dirname, 'data'),
+  proxy: {
+    '^/api': {
+      hub: 'antd-sample',
+    },
+  },
+  showBoard: false,
+};
+
+const defaultDatahub = new DataHub({
+  port: datahubConfig.port,
+});
+
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -60,5 +79,13 @@ module.exports = {
   ],
   devServer: {
     hot: true,
+    before: app => {
+      datahubMiddleware(app)(datahubConfig);
+    },
+    after: () => {
+      defaultDatahub.startServer(datahubConfig).then(() => {
+        console.log('datahub ready');
+      });
+    },
   },
 };

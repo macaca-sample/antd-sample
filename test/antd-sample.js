@@ -39,17 +39,15 @@ describe('test/antd-sample.test.js', () => {
     it('page render should be ok', () => {
       return driver
         .getUrl(BASE_URL)
-        .sleep(1000)
+        .sleep(3000)
         .elementByCss('#app > div > div.ant-layout-content > div')
         .click()
-        .sleep(1000)
-        .execute('document.querySelector(\'body > div:nth-child(2) > div > div > div > ul > li:nth-child(4)\').click()')
         .sleep(1000)
         .elementByCss('#app > div > div.ant-layout-content > div > div > div > div')
         .text()
         .then(d => {
           console.log(`-------- ${d} ---------`);
-          assert(d, 'fourth');
+          assert.equal(d, 'Lucy');
         });
     });
   });
