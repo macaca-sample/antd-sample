@@ -32,14 +32,25 @@ describe('test/antd-sample.test.js', () => {
 
     after(() => {
       return driver
+        .switchAllScenes({
+          hub: 'antd-sample',
+          pathname: 'getListData',
+          scene: 'default'
+        })
         .openReporter(false)
         .quit();
     });
 
-    it('page render should be ok', () => {
+    it('server side success should be ok', () => {
       return driver
+        .switchScene({
+          hub: 'antd-sample',
+          pathname: 'getListData',
+          scene: 'default',
+          dealy: '0'
+        })
         .getUrl(BASE_URL)
-        .sleep(3000)
+        .sleep(500)
         .elementByCss('#app > div > div.ant-layout-content > div')
         .click()
         .sleep(1000)
@@ -49,6 +60,18 @@ describe('test/antd-sample.test.js', () => {
           console.log(`-------- ${d} ---------`);
           assert.equal(d, 'Lucy');
         });
+    });
+
+    it('server side error should be ok', () => {
+      return driver
+        .switchScene({
+          hub: 'antd-sample',
+          pathname: 'getListData',
+          scene: 'error',
+          dealy: '1'
+        })
+        .getUrl(BASE_URL)
+        .sleep(500);
     });
   });
 });

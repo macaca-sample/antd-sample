@@ -4,13 +4,13 @@
     "pathname": "getListData",
     "description": "get list data",
     "method": "ALL",
-    "currentScene": "error",
-    "proxyContent": "{}",
+    "currentScene": "default",
+    "proxyContent": "{\"statusCode\":\"200\",\"responseHeaders\":{}}",
     "params": "{}",
-    "reqSchemaContent": "{\"schemaData\":[{\"field\":\"success\",\"type\":\"boolean\",\"description\":\"is server success\",\"required\":true}]}",
-    "resSchemaContent": "{}",
+    "reqSchemaContent": "{\"schemaData\":{}}",
+    "resSchemaContent": "{\"schemaData\":{\"title\":\"root\",\"type\":\"object\",\"required\":[\"success\"],\"properties\":{\"success\":{\"title\":\"success\",\"type\":\"boolean\",\"descriptions\":\"server side success\"},\"data\":{\"title\":\"data\",\"type\":\"array\",\"required\":[\"age\",\"key\",\"name\",\"address\"],\"properties\":{\"key\":{\"title\":\"key\",\"type\":\"string\",\"descriptions\":\"key description\"},\"name\":{\"title\":\"name\",\"type\":\"string\",\"descriptions\":\"name description\"},\"age\":{\"title\":\"age\",\"type\":\"number\",\"descriptions\":\"age description\"},\"address\":{\"title\":\"address\",\"type\":\"string\",\"descriptions\":\"address description\"}}},\"errorMessage\":{\"title\":\"errorMessage\",\"type\":\"string\",\"descriptions\":\"error message description\"}}}}",
     "responseHeader": "{}",
     "scenes": "[{\"name\":\"default\",\"data\":{\"success\":true,\"data\":[{\"key\":\"1\",\"name\":\"John Brown\",\"age\":32,\"address\":\"New York No. 1 Lake Park\"},{\"key\":\"2\",\"name\":\"Jim Green\",\"age\":42,\"address\":\"London No. 1 Lake Park\"},{\"key\":\"3\",\"name\":\"Joe Black\",\"age\":32,\"address\":\"Sidney No. 1 Lake Park\"},{\"key\":\"4\",\"name\":\"Jim Red\",\"age\":32,\"address\":\"London No. 2 Lake Park\"}]}},{\"name\":\"error\",\"data\":{\"success\":false,\"errorMessage\":\"error message from datahub\"}}]",
-    "delay": "1"
+    "delay": "0"
   }
 ]
