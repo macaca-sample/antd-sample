@@ -35,7 +35,7 @@ describe('test/antd-sample.test.js', () => {
         .switchAllScenes({
           hub: 'antd-sample',
           pathname: 'getListData',
-          scene: 'default'
+          scene: 'default',
         })
         .openReporter(false)
         .quit();
@@ -47,7 +47,7 @@ describe('test/antd-sample.test.js', () => {
           hub: 'antd-sample',
           pathname: 'getListData',
           scene: 'default',
-          dealy: '0'
+          dealy: '0',
         })
         .getUrl(BASE_URL)
         .sleep(500)
@@ -68,7 +68,7 @@ describe('test/antd-sample.test.js', () => {
           hub: 'antd-sample',
           pathname: 'getListData',
           scene: 'error',
-          dealy: '1'
+          dealy: '1',
         })
         .getUrl(BASE_URL)
         .sleep(500);
