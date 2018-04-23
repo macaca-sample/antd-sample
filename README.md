@@ -10,6 +10,20 @@ Macaca test sample for Ant.design
 [coveralls-image]: https://img.shields.io/coveralls/macaca-sample/antd-sample.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/macaca-sample/antd-sample?branch=master
 
+## DataHub
+
+Edit the mock data.
+
+```
+http://localhost:5678/doc/antd-sample
+```
+
+Visit the interface document.
+
+```
+http://localhost:5678/doc/antd-sample
+```
+
 ## Testing
 
 ```bash
