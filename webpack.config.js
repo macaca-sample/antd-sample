@@ -33,6 +33,7 @@ module.exports = {
 
   entry: {
     [pkg.name]: path.join(__dirname, 'src', 'app'),
+    'new-page': path.join(__dirname, 'src', 'new-page'),
   },
 
   output: {
@@ -73,7 +74,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin(`${pkg.name}.css`),
+    new ExtractTextPlugin('[name].css'),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
