@@ -1,0 +1,13 @@
+{
+  "protocol": "http",
+  "pathname": "getListData",
+  "method": "ALL",
+  "projectUniqId": "56c03801-79df-44fd-b643-6eda1fa1223b",
+  "description": "get list data",
+  "currentScene": "error",
+  "proxyConfig": {
+    "proxyList": []
+  },
+  "contextConfig": {},
+  "uniqId": "95122ccb-dcb7-4bb3-84e0-326d8ea1e1d2"
+}

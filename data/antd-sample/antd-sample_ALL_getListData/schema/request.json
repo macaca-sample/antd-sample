@@ -1,0 +1,32 @@
+{
+  "type": "request",
+  "data": {
+    "schemaData": {
+      "type": "array",
+      "required": [
+        "data"
+      ],
+      "items": [
+        {
+          "type": "object",
+          "description": "server side success",
+          "required": [
+            "bar"
+          ],
+          "properties": {
+            "foo": {
+              "type": "string",
+              "description": "foo"
+            },
+            "bar": {
+              "type": "string",
+              "description": "bar"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "interfaceUniqId": "95122ccb-dcb7-4bb3-84e0-326d8ea1e1d2",
+  "uniqId": "f026b32a-3a9c-4054-a671-4e8209ecc493"
+}
