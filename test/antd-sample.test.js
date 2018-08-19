@@ -59,6 +59,14 @@ describe('test/antd-sample.test.js', () => {
         .then(d => {
           console.log(`-------- ${d} ---------`);
           assert.equal(d, 'Lucy');
+        })
+        .sleep(1000)
+        .elementByCss('#app span.ant-table-column-sorter-up')
+        .click()
+        .elementByCss('#app tr:nth-child(1) > td.ant-table-column-has-filters.ant-table-column-sort')
+        .text()
+        .then(text => {
+          assert.equal(text.trim(), 'Jim Red');
         });
     });
 

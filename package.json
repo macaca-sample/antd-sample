@@ -9,9 +9,11 @@
     "type": "git",
     "url": "git://github.com/macaca-sample/antd-sample.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-register": "^6.26.0"
+  },
   "devDependencies": {
-    "antd": "^3.0.1",
+    "antd": "3",
     "babel-core": "^6.25.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.0.0",
@@ -22,7 +24,7 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "chai": "^4.1.2",
+    "chai": "4",
     "codemirror": "^5.32.0",
     "cross-env": "^5.1.1",
     "css-loader": "^0.14.5",
