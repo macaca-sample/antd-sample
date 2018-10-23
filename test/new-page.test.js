@@ -52,7 +52,11 @@ describe('test/new-sample.test.js', () => {
         .getUrl(`${BASE_URL}/new-page.html`)
         .elementByCss('button')
         .click()
-        .sleep(1000);
+        .sleep(1000)
+        .getProperty('class')
+        .then(d => {
+          console.log(`class string: ${d}`);
+        });
     });
   });
 });
