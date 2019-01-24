@@ -1,6 +1,6 @@
 {
   "protocol": "http",
-  "pathname": "getListData",
+  "pathname": "api/getListData",
   "method": "ALL",
   "projectUniqId": "56c03801-79df-44fd-b643-6eda1fa1223b",
   "description": "get list data",
