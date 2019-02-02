@@ -65,7 +65,7 @@
     "lint": "eslint . --ext js,jsx --fix && stylelint --fix src/**/*.less -s less",
     "prepublish": "npm run build",
     "serve": "npm run dev:test &",
-    "test": "macaca run -d ./test --verbose",
+    "test": "macaca run -d ./test --verbose --coverage-ignore \"./src/common/\"",
     "ci": "npm run lint && npm run serve && npm run test"
   },
   "precommit": [
