@@ -1,36 +1,8 @@
 # antd-sample
 
-Macaca test sample for Ant.design
+Give a guiding example of 100% coverage:
 
-[![build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
-
-[travis-image]: https://img.shields.io/travis/macaca-sample/antd-sample.svg?style=flat-square
-[travis-url]: https://travis-ci.org/macaca-sample/antd-sample
-[coveralls-image]: https://img.shields.io/coveralls/macaca-sample/antd-sample.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/macaca-sample/antd-sample?branch=master
-
-## DataHub
-
-Edit the mock data.
-
-```
-http://localhost:5678/doc/antd-sample
-```
-
-Visit the interface document.
-
-```
-http://localhost:5678/doc/antd-sample
-```
-
-## Testing
-
-```bash
-$ npm i
-$ npm run dev:test
-$ npm run test
-```
+https://github.com/app-bootstrap/web-app-bootstrap
 
 ---
 
